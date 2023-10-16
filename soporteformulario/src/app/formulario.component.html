@@ -1,12 +1,20 @@
  <div class="container">
+    <div class="row">
+      <div class="col-md 12">
+        <header class="text-center mt-4" style="background-color: #A5D81B; height: 120px;align-items: center;display: flex;justify-content: center;">
+           <h2 style="color: #F8F9F4; font-weight: bold;">Contacto de soporte !</h2>
+        </header>
+
+      </div>
+
+    </div>
+
+
     <div class="row justify-content-center">
-      <div class="col-md-6">
+      <div class="col-md-9">
   
-        <form [formGroup]="miFormulario" (ngSubmit)="guardar()" class="my-9">
-          <div class="contacto">
-            <h1>Contacto de soporte !</h1>
-          </div>
-          <br>
+        <form [formGroup]="miFormulario" (ngSubmit)="guardar()" class="mt-4">
+          
       
           <div class="form-group mb-3">
             <label for="nombreCompleto" style="font-weight: bold; color: #494C48;">Nombre Completo </label>
@@ -74,7 +82,7 @@
           
   
           
-          <button type="submit" class="btn" style="background-color: #60F72B; color: #fff;">Enviar</button>
+          <button type="submit" class="btn" style="background-color: #A8DB6C; color: #fff;width: 100px;">Enviar</button>
   
   
           
