@@ -64,7 +64,7 @@
       
           <div class="form-group mb-3">
             <label for="msg" style="font-weight: bold; color: #494C48;">Mensaje</label>
-            <textarea id="msg" formControlName="msg" class="form-control" [class.is-invalid]="mensajeNoValido" placeholder="Escriba su mensaje"></textarea>
+            <textarea id="mensaje" formControlName="mensaje" class="form-control" [class.is-invalid]="mensajeNoValido" placeholder="Escriba su mensaje"></textarea>
             <small *ngIf="mensajeNoValido" class="text-danger">
                 Requerido (máximo 300 caracteres)
             </small>

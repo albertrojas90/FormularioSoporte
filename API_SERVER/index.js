@@ -11,7 +11,7 @@ const pool = new Pool({
   host:'localhost',
   database:'usuariosads',
   password:'ciudad',
-  port: 5433,
+  port: 5432,
 });
 
 app.use(bodyParser.json());
@@ -20,7 +20,7 @@ app.use(cors());
 app.post('/guardar-datos', (req, res) => {
   const { nombreCompleto, nombreEmpresa, correo, telefono, categoria, mensaje } = req.body;
 
-  const query = 'INSERT INTO datosSoporte (nombre_completo, nombre_empresa, correo, telefono, categoria, mensaje) VALUES ($1, $2, $3, $4, $5, $6)';
+  const query = 'INSERT INTO datossoporte (nombre_completo, nombre_empresa, correo, telefono, categoria, mensaje) VALUES ($1, $2, $3, $4, $5, $6)';
   const values = [nombreCompleto, nombreEmpresa, correo, telefono, categoria, mensaje];
 
   pool.query(query, values, (error, result) => {
